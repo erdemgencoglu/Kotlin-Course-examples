@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KotlinTemelleri</string>
+    <string name="isimgirishint">İsim Giriniz</string>
+    <string name="meslekgirishint">Meslek Giriniz</string>
+    <string name="yasgirishint">Yas Giriniz</string>
+    <string name="khrmanBtn">Oluştur</string>
+</resources>
