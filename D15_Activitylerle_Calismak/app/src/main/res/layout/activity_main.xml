@@ -6,8 +6,8 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginStart="1dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="1dp"
@@ -21,8 +21,9 @@
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:background="#1E88E5"
+            android:gravity="center"
             android:onClick="Ekran1Btn"
             android:text="Ekran1"
             android:textColor="@color/white" />
@@ -30,8 +31,9 @@
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginTop="5dp"
+            android:gravity="center"
             android:background="#C4E53935"
             android:onClick="Ekran2Btn"
             android:text="Ekran2"
