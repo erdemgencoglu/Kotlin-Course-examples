@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Yemek Tarifleri</string>
+    <string name="tarifeklefragment_tarif_ismi">Tarif ismini giriniz</string>
+    <string name="tarifeklefragment_tarif_icerik">Malzeme listesini giriniz</string>
+    <string name="tarifeklefragment_tarif_ekle">Tarifi Ekle</string>
+    <string name="menuitemyemekekle">Tarif Ekle</string>
+
+</resources>

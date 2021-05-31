@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/tariflerFragment">
+
+    <fragment
+        android:id="@+id/tarifEkleFragment"
+        android:name="com.tetamatrix.kotlintemelleri.Ekranlar.TarifEkleFragment"
+        android:label="fragment_tarif_ekle"
+        tools:layout="@layout/fragment_tarif_ekle" >
+        <action
+            android:id="@+id/action_tarifEkleFragment_to_tariflerFragment"
+            app:destination="@id/tariflerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tariflerFragment"
+        android:name="com.tetamatrix.kotlintemelleri.Ekranlar.TariflerFragment"
+        android:label="fragment_tarifler"
+        tools:layout="@layout/fragment_tarifler" >
+        <action
+            android:id="@+id/action_tariflerFragment_to_tarifEkleFragment"
+            app:destination="@id/tarifEkleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tarifDetayFragment"
+        android:name="com.tetamatrix.kotlintemelleri.Ekranlar.TarifDetayFragment"
+        android:label="fragment_tarif_detay"
+        tools:layout="@layout/fragment_tarif_detay" />
+</navigation>
