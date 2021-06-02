@@ -13,6 +13,12 @@
         <action
             android:id="@+id/action_tarifEkleFragment_to_tariflerFragment"
             app:destination="@id/tariflerFragment" />
+        <argument
+            android:name="bilgi"
+            app:argType="string" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/tariflerFragment"

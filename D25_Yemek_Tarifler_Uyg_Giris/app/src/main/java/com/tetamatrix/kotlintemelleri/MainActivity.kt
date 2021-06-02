@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.yemekeklemeitem) {
             binding.floatingAcBtn.hide()
-            val action = TariflerFragmentDirections.actionTariflerFragmentToTarifEkleFragment()
+            val action = TariflerFragmentDirections.actionTariflerFragmentToTarifEkleFragment("menudengeldim",0)
             Navigation.findNavController(this, R.id.fragmentContainerView).navigate(action)
         }
         return super.onOptionsItemSelected(item)
@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
 
     fun FloatingButtonEkle(view: View) {
         binding.floatingAcBtn.hide()
-        val action = TariflerFragmentDirections.actionTariflerFragmentToTarifEkleFragment()
+        val action = TariflerFragmentDirections.actionTariflerFragmentToTarifEkleFragment("menudengeldim",0)
         Navigation.findNavController(this, R.id.fragmentContainerView).navigate(action)
     }
 
