@@ -1,6 +1,6 @@
 package com.tetamatrix.myapplication.Model
 
-class Kullanici {
+class Kullanici :Insan {
     var isim: String? = null
     var yas: Int? = null
     //initten sonra çağırılır

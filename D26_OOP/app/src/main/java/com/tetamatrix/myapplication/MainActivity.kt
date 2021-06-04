@@ -26,13 +26,34 @@ class MainActivity : AppCompatActivity() {
         //Statik Polymorphism
         val islemler = Islemler()
         println(islemler.carpma())
-        println(islemler.carpma(2,3))
-        println(islemler.carpma(2,3,4))
+        println(islemler.carpma(2, 3))
+        println(islemler.carpma(2, 3, 4))
         //Dinamik Polymorphism
-        val kedi=Hayvan()
+        val kedi = Hayvan()
         kedi.sesCikar()
-        val barley= Kopek()
+        val barley = Kopek()
         barley.sesCikar()//Super class ile kopek clasında aynı ada sahip fonksiyonlar var ise override ile kullanılır ve open yapılır
         barley.kopek()
+        println("-------------Abstraction & Interface------------")
+        // abstactiion super classa erişilmesini engellemek için kullanılır
+        kullanici.Insan()
+        var gitar = Gitar()
+        gitar.marka = "Gitar Markası"
+        gitar.elektro = true
+        gitar.bilgi()
+        println(gitar.oda)
+        println("-------------Lambda Gösterimleri (Expressions)------------")
+        yazdir("test")
+        val yazdirLambda = { gonderilenDeg: String -> println(gonderilenDeg) }
+        yazdirLambda("test lambda")
+        val carpmaIslemilambda = { a: Int, b: Int -> a * b }
+        println(carpmaIslemilambda(6, 7))
+
+        val carpmaLambdaV2: (Int, Int) -> Int = { a, b -> a * b }
+        println(carpmaLambdaV2(6, 7))
+    }
+
+    fun yazdir(string: String) {
+        println(string)
     }
 }
