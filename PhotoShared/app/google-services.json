@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "664071535824",
+    "project_id": "photoshared-63262",
+    "storage_bucket": "photoshared-63262.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664071535824:android:207e6aac32a9ed3f8132d5",
+        "android_client_info": {
+          "package_name": "com.tetamatrix.photoshared"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664071535824-5e6igh0v8vauohlp2vtsmf4su0od6ump.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv5qvzv7MfJg_1Mx4_4Fgd9mSPah_hAr0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664071535824-5e6igh0v8vauohlp2vtsmf4su0od6ump.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

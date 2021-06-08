@@ -1,0 +1,2 @@
+rootProject.name = "PhotoShared"
+include ':app'
