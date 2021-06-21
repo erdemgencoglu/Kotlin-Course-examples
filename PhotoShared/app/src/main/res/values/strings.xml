@@ -1,9 +1,4 @@
 <resources>
-    <string name="app_name">Photo Bucket</string>
-    <string name="edtMail">Mailinizi giriniz</string>
-    <string name="edtPassword">Şifrenizi giriniz</string>
-    <string name="btnLogin">Giriş Butonu</string>
-    <string name="txtRegister">Kayıt Ol!</string>
-    <string name="menuExit">Çıkış</string>
-    <string name="menuShare">Fotoğraf Paylaş</string>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_google_maps_kotlin">Map</string>
 </resources>
