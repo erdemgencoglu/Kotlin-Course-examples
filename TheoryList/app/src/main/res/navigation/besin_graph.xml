@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/besin_graph"
+    app:startDestination="@id/fragmentBesinler">
+
+    <fragment
+        android:id="@+id/fragmentBesinler"
+        android:name="com.tetamatrix.theorylist.Ui.FragmentBesinler"
+        android:label="FragmentBesinler" >
+        <action
+            android:id="@+id/action_fragmentBesinler_to_fragmentBesinDetay"
+            app:destination="@id/fragmentBesinDetay" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentBesinDetay"
+        android:name="com.tetamatrix.theorylist.Ui.FragmentBesinDetay"
+        android:label="FragmentBesinDetay" >
+        <action
+            android:id="@+id/action_fragmentBesinDetay_to_fragmentBesinler"
+            app:destination="@id/fragmentBesinler" />
+        <argument
+            android:name="besinId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

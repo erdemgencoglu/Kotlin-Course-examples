@@ -1,0 +1,2 @@
+rootProject.name = "Theory List"
+include ':app'
