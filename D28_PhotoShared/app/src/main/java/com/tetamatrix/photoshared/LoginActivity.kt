@@ -6,8 +6,8 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.tetamatrix.myapplication.databinding.ActivityLoginBinding
 import com.tetamatrix.photoshared.Ui.PostActivity
-import com.tetamatrix.photoshared.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding

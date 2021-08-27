@@ -3,8 +3,7 @@ package com.tetamatrix.photoshared.Ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
-import com.tetamatrix.photoshared.R
-import com.tetamatrix.photoshared.databinding.ActivityPostBinding
+import com.tetamatrix.myapplication.databinding.ActivityPostBinding
 
 class PostShareActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPostBinding
