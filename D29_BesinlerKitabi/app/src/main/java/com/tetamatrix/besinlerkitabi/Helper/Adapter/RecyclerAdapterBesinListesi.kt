@@ -7,6 +7,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.tetamatrix.besinlerkitabi.Helper.Util.gorselIndir
+import com.tetamatrix.besinlerkitabi.Helper.Util.placeholderYap
 import com.tetamatrix.besinlerkitabi.Model.Besin
 import com.tetamatrix.besinlerkitabi.R
 import com.tetamatrix.besinlerkitabi.View.BesinListesiFragmentDirections
@@ -31,10 +34,11 @@ class RecyclerAdapterBesinListesi(val besinListesi: ArrayList<Besin>) : Recycler
         //setting
         besinAdi.text = besinListesi[position].isim
         besinKalori.text = besinListesi[position].kalori
+        besinRowImage.gorselIndir(besinListesi[position].gorsel, placeholderYap(holder.itemView.context))
 
         //liste tıklama olayı
         holder.itemView.setOnClickListener {
-            val action = BesinListesiFragmentDirections.actionBesinListesiFragmentToBesinDetayFragment(0)
+            val action = BesinListesiFragmentDirections.actionBesinListesiFragmentToBesinDetayFragment(besinListesi[position].uuid)
             Navigation.findNavController(it).navigate(action)
         }
 
@@ -45,7 +49,7 @@ class RecyclerAdapterBesinListesi(val besinListesi: ArrayList<Besin>) : Recycler
     }
 
     //Listeyi Güncelleme(Activityden yapmaktansa burada daha toplu olur)
-    fun besinlistesiGuncelle(guncelBesinListes: ArrayList<Besin>) {
+    fun besinlistesiGuncelle(guncelBesinListes: List<Besin>) {
         besinListesi.clear()
         besinListesi.addAll(guncelBesinListes)
         notifyDataSetChanged()

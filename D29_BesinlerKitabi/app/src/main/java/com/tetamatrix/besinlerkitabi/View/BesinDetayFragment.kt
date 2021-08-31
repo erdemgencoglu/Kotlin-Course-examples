@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
+import com.tetamatrix.besinlerkitabi.Helper.Util.gorselIndir
+import com.tetamatrix.besinlerkitabi.Helper.Util.placeholderYap
 import com.tetamatrix.besinlerkitabi.Model.Besin
 import com.tetamatrix.besinlerkitabi.ViewModel.BesinDetayFragmentViewModel
 import com.tetamatrix.besinlerkitabi.databinding.FragmentBesinDetayBinding
@@ -34,16 +36,15 @@ class BesinDetayFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(BesinDetayFragmentViewModel::class.java)
-        viewModel.fetchRoomData()
-        observeLiveData()
         //Gelen argüman var ise
         //Argumanları al
         arguments?.let {
             besinId = BesinDetayFragmentArgs.fromBundle(it).besinId
-            println(besinId)
         }
 
+        viewModel = ViewModelProviders.of(this).get(BesinDetayFragmentViewModel::class.java)
+        viewModel.roomVerisiniAll(besinId)
+        observeLiveData()
     }
 
     //ViewModelımızdaki tanımlarımızı observe edme yani gözlemleyen(dinleyen)
@@ -56,6 +57,9 @@ class BesinDetayFragment : Fragment() {
                 binding.besinKarbonHidrartxt.text = it.karbonhidrad
                 binding.besinProteintxt.text = it.protein
                 binding.besinYagtxt.text = it.yag
+                context?.let {
+                    binding.imageView.gorselIndir(besin.gorsel, placeholderYap(it))
+                }
             }
         })
     }

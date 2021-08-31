@@ -29,7 +29,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget =JavaVersion.VERSION_1_8.toString()
     }
     buildFeatures {
         viewBinding = true
@@ -55,8 +55,9 @@ dependencies {
     def glideVersion = '4.11.0'
     def rxJavaVersion = '2.2.8'
     def rxAndroidVersion = '2.1.1'
-    def roomVersion = '2.2.3'
+    def roomVersion = '2.3.0'
     def navVersion = '2.3.0'
+    def prefVersion = '1.0.0'
 
     //Room
     implementation "androidx.room:room-runtime:$roomVersion"
@@ -79,4 +80,8 @@ dependencies {
     implementation "com.google.android.material:material:1.1.0"
     implementation "com.android.support:design:$supportVersion"
     implementation "com.github.bumptech.glide:glide:$glideVersion"
+    //Shared preferance
+    implementation "androidx.preference:preference-ktx:$prefVersion"
+
+
 }

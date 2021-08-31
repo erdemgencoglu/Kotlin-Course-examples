@@ -42,6 +42,13 @@ class BesinListesiFragment : Fragment() {
         binding.rcyclerBesinListesi.layoutManager = LinearLayoutManager(context)
         binding.rcyclerBesinListesi.adapter = recyclerBesinAdapter
 
+        binding.swipeRefleshLayout.setOnRefreshListener {
+            binding.prgbBesinListesi.visibility = View.VISIBLE
+            binding.txwBesinlerListesi.visibility = View.GONE
+            binding.rcyclerBesinListesi.visibility = View.GONE
+            viewModel.refleshFromInternet()
+            binding.swipeRefleshLayout.isRefreshing = false
+        }
         observeLiveData()
 
     }
