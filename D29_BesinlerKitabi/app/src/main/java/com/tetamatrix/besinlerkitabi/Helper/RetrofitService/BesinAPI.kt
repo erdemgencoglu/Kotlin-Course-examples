@@ -1,6 +1,6 @@
-package com.tetamatrix.besinlerkitabi.Helper.RetrofitService
+package com.tetamatrix.besinlerkitabi.helper.retrofitService
 
-import com.tetamatrix.besinlerkitabi.Model.Besin
+import com.tetamatrix.besinlerkitabi.model.Besin
 import io.reactivex.Single
 import retrofit2.http.GET
 

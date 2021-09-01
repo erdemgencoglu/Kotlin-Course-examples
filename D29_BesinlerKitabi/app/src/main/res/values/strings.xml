@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">BesinlerKitabi</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="besidetayisim">İsim</string>
+    <string name="besidetaykalori">Kalori</string>
+    <string name="besidetaykarbonhidrad">Karbonhidrad</string>
+    <string name="besidetayprotein">Protein</string>
+    <string name="besidetayyag">Yag</string>
+    <string name="besinlisthata">Hata! tekrar deneyiniz</string>
+    <string name="besinlistrcyisim">İsim</string>
+    <string name="besinlistrcykalori">Kalori</string>
 </resources>

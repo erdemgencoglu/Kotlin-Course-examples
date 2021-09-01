@@ -1,4 +1,4 @@
-package com.tetamatrix.besinlerkitabi.Helper.Util
+package com.tetamatrix.besinlerkitabi.helper.util
 
 import android.content.Context
 import android.content.SharedPreferences

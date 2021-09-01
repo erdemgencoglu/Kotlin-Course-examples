@@ -1,4 +1,4 @@
-package com.tetamatrix.besinlerkitabi.Helper
+package com.tetamatrix.besinlerkitabi.helper
 
 class Functions {
 }

@@ -1,4 +1,4 @@
-package com.tetamatrix.besinlerkitabi.ViewModel
+package com.tetamatrix.besinlerkitabi.viewModel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

@@ -1,7 +1,8 @@
-package com.tetamatrix.besinlerkitabi.Helper.Util
+package com.tetamatrix.besinlerkitabi.helper.util
 
 import android.content.Context
 import android.widget.ImageView
+import androidx.databinding.BindingAdapter
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -20,4 +21,10 @@ fun placeholderYap(context: Context): CircularProgressDrawable {
         centerRadius = 40f
         start()
     }
+}
+
+//Databinding için resim nesnesi için
+@BindingAdapter("android:downloadImage")
+fun downloadImage(view: ImageView, url: String?) {
+    view.gorselIndir(url, placeholderYap(view.context))
 }

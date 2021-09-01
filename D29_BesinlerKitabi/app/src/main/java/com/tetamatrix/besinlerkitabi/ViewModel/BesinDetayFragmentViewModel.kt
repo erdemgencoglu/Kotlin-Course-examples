@@ -1,11 +1,9 @@
-package com.tetamatrix.besinlerkitabi.ViewModel
+package com.tetamatrix.besinlerkitabi.viewModel
 
 import android.app.Application
-import android.widget.ImageView
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import com.tetamatrix.besinlerkitabi.Helper.RoomService.BesinDatabase
-import com.tetamatrix.besinlerkitabi.Model.Besin
+import com.tetamatrix.besinlerkitabi.helper.roomService.BesinDatabase
+import com.tetamatrix.besinlerkitabi.model.Besin
 import kotlinx.coroutines.launch
 
 class BesinDetayFragmentViewModel(application: Application) : BaseViewModel(application) {

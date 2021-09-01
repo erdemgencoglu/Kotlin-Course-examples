@@ -1,4 +1,4 @@
-package com.tetamatrix.besinlerkitabi.View
+package com.tetamatrix.besinlerkitabi.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.tetamatrix.besinlerkitabi.Helper.Adapter.RecyclerAdapterBesinListesi
-import com.tetamatrix.besinlerkitabi.ViewModel.BesinListesiFragmentViewModel
+import com.tetamatrix.besinlerkitabi.helper.adapter.RecyclerAdapterBesinListesi
+import com.tetamatrix.besinlerkitabi.viewModel.BesinListesiFragmentViewModel
 import com.tetamatrix.besinlerkitabi.databinding.FragmentBesinListesiBinding
 
 class BesinListesiFragment : Fragment() {

@@ -1,9 +1,9 @@
-package com.tetamatrix.besinlerkitabi.Helper.RoomService
+package com.tetamatrix.besinlerkitabi.helper.roomService
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
-import com.tetamatrix.besinlerkitabi.Model.Besin
+import com.tetamatrix.besinlerkitabi.model.Besin
 
 @Dao
 interface BesinDao {

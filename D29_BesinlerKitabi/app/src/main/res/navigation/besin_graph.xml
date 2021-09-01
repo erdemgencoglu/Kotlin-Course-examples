@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/besinDetayFragment"
-        android:name="com.tetamatrix.besinlerkitabi.View.BesinDetayFragment"
+        android:name="com.tetamatrix.besinlerkitabi.view.BesinDetayFragment"
         android:label="BesinDetayFragment" >
         <action
             android:id="@+id/action_besinDetayFragment_to_besinListesiFragment"
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/besinListesiFragment"
-        android:name="com.tetamatrix.besinlerkitabi.View.BesinListesiFragment"
+        android:name="com.tetamatrix.besinlerkitabi.view.BesinListesiFragment"
         android:label="BesinListesiFragment" >
         <action
             android:id="@+id/action_besinListesiFragment_to_besinDetayFragment"

@@ -1,10 +1,10 @@
-package com.tetamatrix.besinlerkitabi.Helper.RoomService
+package com.tetamatrix.besinlerkitabi.helper.roomService
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.tetamatrix.besinlerkitabi.Model.Besin
+import com.tetamatrix.besinlerkitabi.model.Besin
 
 @Database(entities = arrayOf(Besin::class), version = 1)
 abstract class BesinDatabase : RoomDatabase() {
